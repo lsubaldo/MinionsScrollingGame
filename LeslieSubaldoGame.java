@@ -67,7 +67,7 @@ public class LeslieSubaldoGame
   
   private void init() {  
     grid = new Grid(h_dim, w_dim, Color.WHITE);   
-    ///////////////////////////////////////////////
+
     userRow = u_row;
     msElapsed = 0;
     timesGet = 0;
@@ -120,7 +120,7 @@ public class LeslieSubaldoGame
       grid.setImage(new Location(userRow-1, 0), blank);
       grid.setImage(new Location(userRow, 0), user);
     }
-    // to help you with step 9  --> explore to understand how to tune your game speed
+
     else if (key == KeyEvent.VK_T)      
     {
       boolean interval = (msElapsed % (3 * pauseTime) == 0);
@@ -264,15 +264,15 @@ public class LeslieSubaldoGame
   
   public static void test()
   {
-    if (DEMO) {       
+    /*if (DEMO) {       
       System.out.println("Running the demo: DEMO=" + DEMO);
       //default constructor   (4 by 10)
       //MattGame game = new MattGame();
       MattGame game = new MattGame(10, 20, 0);
       game.play();
     
-    } else {
-      System.out.println("Running student game: DEMO=" + DEMO);
+    } else {*/
+      //System.out.println("Running student game: DEMO=" + DEMO);
       // !DEMO   -> your code should execute those lines when you are
       // implementing your game
       
@@ -282,7 +282,7 @@ public class LeslieSubaldoGame
       //test 2: with constructor specifying grid size    IT SHOULD ALSO WORK as long as height < width
       //LeslieSubaldoGame game = new LeslieSubaldoGame(10, 20, 0);
       game.play();
-    }
+    //}
   }
   
   public static void main(String[] args)
