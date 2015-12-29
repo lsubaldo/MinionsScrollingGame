@@ -6,7 +6,6 @@ public class LeslieSubaldoGame
   
   // set to false to use your code
   private static final boolean DEMO = false;           
-  public MichaelRapaportGame dg;
   
   // Game window should be wider than tall:   H_DIM < W_DIM   
   // (more effectively using space)
